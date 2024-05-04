@@ -4,12 +4,22 @@ const ans = document.getElementsByClassName("ans")[0]
 const button = document.getElementsByClassName("calculate")[0]
 const wrapper = document.getElementsByClassName("wrapper")[0]
 const blueScreen = document.getElementsByClassName("blue-screen")[0]
+const jk = document.getElementsByClassName("jk")[0]
 
 button.addEventListener('click',toggleFullScreen);
 function toggleFullScreen() {
     wrapper.requestFullscreen()
     wrapper.style.display = 'none';
     blueScreen.style.display = "block";
+
+    setTimeout(() => {
+        console.log("timeout");
+        document.exitFullscreen();
+        blueScreen.style.display = "none";
+        jk.style.display = "inline-block";
+
+        jk.nodeValue = "JK";
+    }, 10000);
 
 }
 
