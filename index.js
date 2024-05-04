@@ -17,7 +17,6 @@ function toggleFullScreen() {
         document.exitFullscreen();
         blueScreen.style.display = "none";
         jk.style.display = "inline-block";
-
         jk.nodeValue = "JK";
     }, 10000);
 
