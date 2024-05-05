@@ -29,5 +29,3 @@ function calculate()
     const value3 = value1 + value2;
     ans.textContent = value3;
 }
-
-// console.log(num1.nodeValue);
